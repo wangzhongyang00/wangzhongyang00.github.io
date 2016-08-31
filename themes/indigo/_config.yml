@@ -17,13 +17,10 @@ menu:
   tags:
     text: 标签
     url: /tags
-  weibo:
-    text: 微博
-    url: http://www.weibo.com/vergilhk
-    target: _blank
+
   github:
     text: github
-    url: https://github.com/NNorland
+    url: https://github.com/wangzhongyang00
     target: _blank
   link:
     text: 关于
@@ -35,7 +32,7 @@ rss: /atom.xml
 avatar: /img/avatar.gif
 
 # email
-email: liujiaan.d@gmail.com
+email: 425772719@qq.com
 
 # 设置 Android L Chrome 浏览器状态栏颜色
 color: '#3F51B5'

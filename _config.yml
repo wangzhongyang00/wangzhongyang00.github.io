@@ -3,16 +3,16 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: NNorLand
-subtitle: 瞎写
-description: 修电脑的
-author: 刘家安
+title: 王中阳
+subtitle: 人啊总是需要一个副标题
+description: 最帅的阳仔思密达
+author: 王中阳
 language: zh-Hans
 timezone:
-email: liujiaan.d@gmail.com
+email: 425772719@qq.com
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://liujiaan.ren
+url: http://wangzhongyang.ren
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -25,7 +25,8 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render:
+## 不使用模板
+skip_render:  
   - marry/**
 
 # Writing
@@ -72,7 +73,7 @@ feed:
   path: atom.xml #rss 路径
   limit: 20 #在 rss 中最多生成的文章数(0显示所有)
 
-#duoshuo_shortname: NNorLand
+#duoshuo_shortname: wangzhongyang00
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 search:
@@ -118,7 +119,7 @@ sitemap:
 #发布
 deploy:
   type: git
-  repo: git@github.com:NNorLand/NNorLand.github.io.git
+  repo: git@github.com:wangzhongyang00/wangzhongyang00.github.io.git
   branch: master
   message: blog update
 
