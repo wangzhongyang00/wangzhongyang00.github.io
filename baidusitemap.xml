@@ -5,32 +5,14 @@
     
     
   <url>
-    <loc>http://wangzhongyang.ren/2016/07/10/7niu/</loc>
+    <loc>http://wangzhongyang.ren/2016/07/26/git-commit-message-change-log/</loc>
     <lastmod>2016-08-31T11:49:46.019Z</lastmod>
     <data>
         <display>
-        <title>7niu</title>
-        <pubTime>2016-07-10T05:08:29.000Z</pubTime>
+        <title>git commit message和change log编写指南</title>
+        <pubTime>2016-07-26T03:28:53.000Z</pubTime>
         
-        <tag>7niu</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-    
-  <url>
-    <loc>http://wangzhongyang.ren/2016/08/17/mac-software/</loc>
-    <lastmod>2016-08-31T11:49:46.019Z</lastmod>
-    <data>
-        <display>
-        <title>Mac软件</title>
-        <pubTime>2016-08-17T09:07:29.000Z</pubTime>
-        
-        <tag>Mac</tag>
+        <tag>Git</tag>
          
          
            
@@ -56,6 +38,7 @@
     </url>
 
     
+    
   <url>
     <loc>http://wangzhongyang.ren/2016/07/02/markdown-guide/</loc>
     <lastmod>2016-08-31T11:49:46.019Z</lastmod>
@@ -67,6 +50,23 @@
         <tag>Markdown</tag>
          
         <tag>Wiki</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wangzhongyang.ren/2016/08/17/mac-software/</loc>
+    <lastmod>2016-08-31T11:49:46.019Z</lastmod>
+    <data>
+        <display>
+        <title>Mac软件</title>
+        <pubTime>2016-08-17T09:07:29.000Z</pubTime>
+        
+        <tag>Mac</tag>
          
          
            
@@ -94,18 +94,14 @@
     
     
   <url>
-    <loc>http://wangzhongyang.ren/2016/08/22/FrontEnd/ios-web-fixed-input-bug/</loc>
+    <loc>http://wangzhongyang.ren/2016/08/29/FrontEnd/jquery-on-append/</loc>
     <lastmod>2016-08-31T11:49:46.019Z</lastmod>
     <data>
         <display>
-        <title>Web移动端Fixed布局的解决方案</title>
-        <pubTime>2016-08-22T06:32:57.000Z</pubTime>
+        <title>jQuery插入元素动态绑定事件</title>
+        <pubTime>2016-08-29T03:53:00.000Z</pubTime>
         
-        <tag>CSS</tag>
-         
-        <tag>html</tag>
-         
-        <tag>移动开发</tag>
+        <tag>JavaScript</tag>
          
          
            
@@ -136,14 +132,35 @@
 
     
   <url>
-    <loc>http://wangzhongyang.ren/2016/07/26/git-commit-message-change-log/</loc>
+    <loc>http://wangzhongyang.ren/2016/07/10/7niu/</loc>
     <lastmod>2016-08-31T11:49:46.019Z</lastmod>
     <data>
         <display>
-        <title>git commit message和change log编写指南</title>
-        <pubTime>2016-07-26T03:28:53.000Z</pubTime>
+        <title>7niu</title>
+        <pubTime>2016-07-10T05:08:29.000Z</pubTime>
         
-        <tag>Git</tag>
+        <tag>7niu</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wangzhongyang.ren/2016/08/22/FrontEnd/ios-web-fixed-input-bug/</loc>
+    <lastmod>2016-08-31T11:49:46.019Z</lastmod>
+    <data>
+        <display>
+        <title>Web移动端Fixed布局的解决方案</title>
+        <pubTime>2016-08-22T06:32:57.000Z</pubTime>
+        
+        <tag>CSS</tag>
+         
+        <tag>html</tag>
+         
+        <tag>移动开发</tag>
          
          
            
@@ -174,14 +191,14 @@
 
     
   <url>
-    <loc>http://wangzhongyang.ren/2016/07/05/JavaScript/JavaScript-firstday/</loc>
+    <loc>http://wangzhongyang.ren/2016/08/24/%E6%9D%82%E8%AE%B0/Financial-independence/</loc>
     <lastmod>2016-08-31T11:49:46.019Z</lastmod>
     <data>
         <display>
-        <title>JavaScript基础巩固第一天</title>
-        <pubTime>2016-07-05T06:44:49.000Z</pubTime>
+        <title>财务自由</title>
+        <pubTime>2016-08-24T14:08:33.000Z</pubTime>
         
-        <tag>JavaScript</tag>
+        <tag>杂记</tag>
          
          
            
@@ -201,23 +218,6 @@
         <tag>Nodejs</tag>
          
         <tag>Yeoman</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wangzhongyang.ren/2016/08/24/%E6%9D%82%E8%AE%B0/Financial-independence/</loc>
-    <lastmod>2016-08-31T11:49:46.019Z</lastmod>
-    <data>
-        <display>
-        <title>财务自由</title>
-        <pubTime>2016-08-24T14:08:33.000Z</pubTime>
-        
-        <tag>杂记</tag>
          
          
            
@@ -280,12 +280,12 @@
 
     
   <url>
-    <loc>http://wangzhongyang.ren/2016/08/29/FrontEnd/jquery-on-append/</loc>
+    <loc>http://wangzhongyang.ren/2016/07/05/JavaScript/JavaScript-firstday/</loc>
     <lastmod>2016-08-31T11:49:46.019Z</lastmod>
     <data>
         <display>
-        <title>jQuery插入元素动态绑定事件</title>
-        <pubTime>2016-08-29T03:53:00.000Z</pubTime>
+        <title>JavaScript基础巩固第一天</title>
+        <pubTime>2016-07-05T06:44:49.000Z</pubTime>
         
         <tag>JavaScript</tag>
          
