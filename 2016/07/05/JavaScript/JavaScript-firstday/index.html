@@ -6,6 +6,8 @@
   <title>JavaScript基础巩固第一天 | 王中阳 | 汇细流，成江海;积跬步，致千里。</title>
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
   
+  <meta name="theme-color" content="#3F51B5">
+  
   
   <meta name="keywords" content="JavaScript">
   <meta name="description" content="JavaScript组成部分：语法，类型，语句，关键字，保留字，操作符，对象。标识符，就是指变量、函数、属性的名字，或者函数的参数。按照惯例，ECMAScript标识符采用驼峰大小写格式。构造函数都以大写字母开始。JavaScript中的实数常常只是真实值的一个近似表示。有两种方式来访问对象的属性，点操作符或者中括号操作符。
@@ -22,21 +24,23 @@ JavaScript五种基本数据类型，Undefined,Null,Bo">
 <meta name="twitter:description" content="JavaScript组成部分：语法，类型，语句，关键字，保留字，操作符，对象。标识符，就是指变量、函数、属性的名字，或者函数的参数。按照惯例，ECMAScript标识符采用驼峰大小写格式。构造函数都以大写字母开始。JavaScript中的实数常常只是真实值的一个近似表示。有两种方式来访问对象的属性，点操作符或者中括号操作符。
 JavaScript五种基本数据类型，Undefined,Null,Bo">
   
+    <link rel="alternative" href="/atom.xml" title="王中阳" type="application/atom+xml">
+  
   <meta name="summary" content="&lt;p&gt;JavaScript组成部分：语法，类型，语句，关键字，保留字，操作符，对象。&lt;br&gt;标识符，就是指变量、函数、属性的名字，或者函数的参数。&lt;br&gt;按照惯例，ECMAScript标识符采用驼峰大小写格式。构造函数都以大写字母开始。&lt;br&gt;JavaScript中的实数常常只是真实值的一个近似表示。&lt;br&gt;有两种方式来访问对象的属性，点操作符或者中括号操作符。&lt;/p&gt;
 &lt;p&gt;JavaScript五种基本数据类型，Undefined,Null,Boolean,Number和string。还有一个复杂数据类型，object。&lt;br&gt;从逻辑角度来看，null值表示一个空指针对象 alert(typeof null); //=&amp;gt; “object”&lt;/p&gt;">
-  <link rel="shortcut icon" href="/">
+  <link rel="shortcut icon" href="/favicon.ico">
   <link rel="stylesheet" href="/css/style.css">
 </head></html>
 <body>
   <div id="loading" class="active"></div>
-  <nav id="menu">
+  <nav id="menu" class="hide">
    <div class="inner flex-row-vertical">
   <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
       <i class="icon icon-lg icon-close"></i>
   </a>
   <div class="brand-wrap">
     <div class="brand">
-      <a href="/" class="avatar"><img src="undefined"></a>
+      <a href="/" class="avatar"><img src="/img/avatar.gif"></a>
       <hgroup class="introduce">
         <h5 class="nickname">王中阳</h5>
         <a href="mailto:425772719@qq.com" title="425772719@qq.com" class="mail">425772719@qq.com</a>
@@ -45,6 +49,48 @@ JavaScript五种基本数据类型，Undefined,Null,Bo">
   </div>
   <ul class="nav flex-col">
     
+        <li class="waves-block waves-effect">
+          <a href="/">
+            <i class="icon icon-lg icon-home"></i>
+            主页
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/archives">
+            <i class="icon icon-lg icon-archives"></i>
+            归档
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/tags">
+            <i class="icon icon-lg icon-tags"></i>
+            标签
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="http://blog.csdn.net/w425772719" target="_blank">
+            <i class="icon icon-lg icon-heart"></i>
+            CSDN
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="https://github.com/wangzhongyang00" target="_blank">
+            <i class="icon icon-lg icon-github"></i>
+            github
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/about">
+            <i class="icon icon-lg icon-link"></i>
+            关于
+          </a>
+        </li>
+    
   </ul>
 
   <footer class="footer">
@@ -52,7 +98,7 @@ JavaScript五种基本数据类型，Undefined,Null,Bo">
   <p>王中阳 &copy; 2016</p>
   <p>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme
   <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></p>
-  <a href="undefined" target="_blank" class="rss" title="rss"><i class="icon icon-2x icon-rss-square"></i></a>
+  <a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-2x icon-rss-square"></i></a>
 </footer>
 </div>
   </nav>
@@ -100,6 +146,10 @@ JavaScript五种基本数据类型，Undefined,Null,Bo">
             
 
             
+            <nav class="post-toc-wrap" id="post-toc">
+            
+            </nav>
+            
         </aside>
 
         <div class="post-main">
@@ -138,13 +188,12 @@ JavaScript五种基本数据类型，Undefined,Null,Bo">
   
 </nav>
             
-            
-        </div>
-    </div>
-</article>
-    </div>
-  </main>
-<div class="mask" id="mask"></div>
+            <div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="JavaScript基础巩固第一天" data-title="JavaScript基础巩固第一天" data-url="http://wangzhongyang.ren/2016/07/05/JavaScript/JavaScript-firstday/index.html"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">var duoshuoQuery={short_name:"NNorLand"};!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"==document.location.protocol?"https:":"http:")+"//static.duoshuo.com/embed.js",t.charset="UTF-8",(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(t)}();</script><!-- 多说公共JS代码 end --></div></div></div></article></div></main><div class="mask" id="mask"></div>
 <a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
 <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script><script src="/js/main.js"></script><div class="search-panel" id="search-panel">
     <ul class="search-result" id="search-result"></ul>
@@ -161,4 +210,4 @@ JavaScript五种基本数据类型，Undefined,Null,Bo">
         </div>
     </a>
 </li>
-</script><script src="/js/search.js"></script></body>
+</script><script src="/js/search.js"></script><script src="http://s95.cnzz.com/z_stat.php?id=hooray_K@163.com&web_id=hooray_K@163.com"></script></body>

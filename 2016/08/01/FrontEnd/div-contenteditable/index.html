@@ -6,8 +6,10 @@
   <title>div实现高度撑开的输入框 | 王中阳 | 汇细流，成江海;积跬步，致千里。</title>
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
   
+  <meta name="theme-color" content="#3F51B5">
   
-  <meta name="keywords" content="CSS,html">
+  
+  <meta name="keywords" content="html,CSS">
   <meta name="description" content="转载来自张鑫旭-鑫空间-鑫生活原文地址： http://www.zhangxinxu.com/wordpress/2016/01/contenteditable-plaintext-only/
 
 contenteditable使用input或textare时,输入框大小固定,因此采用div,在div上增加contenteditable=&amp;quot;true&amp;quot;属性.这样的话,没有plac">
@@ -25,23 +27,25 @@ contenteditable使用input或textare时,输入框大小固定,因此采用div,�
 
 contenteditable使用input或textare时,输入框大小固定,因此采用div,在div上增加contenteditable=&amp;quot;true&amp;quot;属性.这样的话,没有plac">
   
+    <link rel="alternative" href="/atom.xml" title="王中阳" type="application/atom+xml">
+  
   <meta name="summary" content="&lt;blockquote&gt;
 &lt;p&gt;转载&lt;br&gt;来自&lt;a href=&quot;http://www.zhangxinxu.com&quot;&gt;张鑫旭-鑫空间-鑫生活&lt;/a&gt;&lt;br&gt;原文地址： &lt;a href=&quot;http://www.zhangxinxu.com/wordpress/2016/01/contenteditable-plaintext-only/&quot;&gt;http://www.zhangxinxu.com/wordpress/2016/01/contenteditable-plaintext-only/&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h1 id=&quot;contenteditable&quot;&gt;&lt;a href=&quot;#contenteditable&quot; class=&quot;headerlink&quot; title=&quot;contenteditable&quot;&gt;&lt;/a&gt;contenteditable&lt;/h1&gt;&lt;p&gt;使用input或textare时,输入框大小固定,因此采用div,在div上增加&lt;code&gt;contenteditable=&amp;quot;true&amp;quot;&lt;/code&gt;属性.这样的话,没有placeholder属性,通过css样式&lt;code&gt;:empty:before&lt;/code&gt;,增加content解决.&lt;/p&gt;">
-  <link rel="shortcut icon" href="/">
+  <link rel="shortcut icon" href="/favicon.ico">
   <link rel="stylesheet" href="/css/style.css">
 </head></html>
 <body>
   <div id="loading" class="active"></div>
-  <nav id="menu">
+  <nav id="menu" class="hide">
    <div class="inner flex-row-vertical">
   <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
       <i class="icon icon-lg icon-close"></i>
   </a>
   <div class="brand-wrap">
     <div class="brand">
-      <a href="/" class="avatar"><img src="undefined"></a>
+      <a href="/" class="avatar"><img src="/img/avatar.gif"></a>
       <hgroup class="introduce">
         <h5 class="nickname">王中阳</h5>
         <a href="mailto:425772719@qq.com" title="425772719@qq.com" class="mail">425772719@qq.com</a>
@@ -50,6 +54,48 @@ contenteditable使用input或textare时,输入框大小固定,因此采用div,�
   </div>
   <ul class="nav flex-col">
     
+        <li class="waves-block waves-effect">
+          <a href="/">
+            <i class="icon icon-lg icon-home"></i>
+            主页
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/archives">
+            <i class="icon icon-lg icon-archives"></i>
+            归档
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/tags">
+            <i class="icon icon-lg icon-tags"></i>
+            标签
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="http://blog.csdn.net/w425772719" target="_blank">
+            <i class="icon icon-lg icon-heart"></i>
+            CSDN
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="https://github.com/wangzhongyang00" target="_blank">
+            <i class="icon icon-lg icon-github"></i>
+            github
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/about">
+            <i class="icon icon-lg icon-link"></i>
+            关于
+          </a>
+        </li>
+    
   </ul>
 
   <footer class="footer">
@@ -57,7 +103,7 @@ contenteditable使用input或textare时,输入框大小固定,因此采用div,�
   <p>王中阳 &copy; 2016</p>
   <p>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme
   <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></p>
-  <a href="undefined" target="_blank" class="rss" title="rss"><i class="icon icon-2x icon-rss-square"></i></a>
+  <a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-2x icon-rss-square"></i></a>
 </footer>
 </div>
   </nav>
@@ -104,6 +150,10 @@ contenteditable使用input或textare时,输入框大小固定,因此采用div,�
 
             
 
+            
+            <nav class="post-toc-wrap" id="post-toc">
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#contenteditable"><span class="post-toc-number">1.</span> <span class="post-toc-text">contenteditable</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#温故知新"><span class="post-toc-number">2.</span> <span class="post-toc-text">温故知新</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#提问：在HTML中，contenteditable支持的属性值是？"><span class="post-toc-number">3.</span> <span class="post-toc-text">提问：在HTML中，contenteditable支持的属性值是？</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#与contenteditable属性无关的CSS控制法"><span class="post-toc-number">4.</span> <span class="post-toc-text">与contenteditable属性无关的CSS控制法</span></a></li></ol>
+            </nav>
             
         </aside>
 
@@ -170,13 +220,12 @@ contenteditable使用input或textare时,输入框大小固定,因此采用div,�
   
 </nav>
             
-            
-        </div>
-    </div>
-</article>
-    </div>
-  </main>
-<div class="mask" id="mask"></div>
+            <div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="div实现高度撑开的输入框" data-title="div实现高度撑开的输入框" data-url="http://wangzhongyang.ren/2016/08/01/FrontEnd/div-contenteditable/index.html"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">var duoshuoQuery={short_name:"NNorLand"};!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"==document.location.protocol?"https:":"http:")+"//static.duoshuo.com/embed.js",t.charset="UTF-8",(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(t)}();</script><!-- 多说公共JS代码 end --></div></div></div></article></div></main><div class="mask" id="mask"></div>
 <a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
 <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script><script src="/js/main.js"></script><div class="search-panel" id="search-panel">
     <ul class="search-result" id="search-result"></ul>
@@ -193,4 +242,4 @@ contenteditable使用input或textare时,输入框大小固定,因此采用div,�
         </div>
     </a>
 </li>
-</script><script src="/js/search.js"></script></body>
+</script><script src="/js/search.js"></script><script src="http://s95.cnzz.com/z_stat.php?id=hooray_K@163.com&web_id=hooray_K@163.com"></script></body>

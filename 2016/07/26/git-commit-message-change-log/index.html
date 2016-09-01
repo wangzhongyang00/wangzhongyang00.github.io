@@ -6,6 +6,8 @@
   <title>git commit message和change log编写指南 | 王中阳 | 汇细流，成江海;积跬步，致千里。</title>
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
   
+  <meta name="theme-color" content="#3F51B5">
+  
   
   <meta name="keywords" content="Git">
   <meta name="description" content="原作者：阮一峰
@@ -42,6 +44,8 @@ git每次提交代码，都要写commit message，否则不允许提交。1$ git
 基本上你写什么都行但是,一般来说,commit message">
 <meta name="twitter:image" content="http://o9yayw1x8.bkt.clouddn.com/image/hexo/2016/07/26/bg2016010604.png">
   
+    <link rel="alternative" href="/atom.xml" title="王中阳" type="application/atom+xml">
+  
   <meta name="summary" content="&lt;p&gt;&lt;strong&gt;原作者：&lt;/strong&gt;阮一峰&lt;/p&gt;
 &lt;p&gt;日期：2016年1月6日&lt;/p&gt;
 &lt;blockquote&gt;
@@ -51,19 +55,19 @@ git每次提交代码，都要写commit message，否则不允许提交。1$ git
 &lt;p&gt;只执行git commit，会跳出文本编辑器，让你写多行。&lt;/p&gt;
 &lt;p&gt;基本上你写什么都行但是,一般来说,commit message应该清晰明了.说明本次提交的目的.&lt;/p&gt;
 &lt;p&gt;目前,社区有很多种commit message 规范.本文介绍angular规范,这是目前最广泛的写法,比较合理和系统化,并且有配套的工具.&lt;/p&gt;">
-  <link rel="shortcut icon" href="/">
+  <link rel="shortcut icon" href="/favicon.ico">
   <link rel="stylesheet" href="/css/style.css">
 </head></html>
 <body>
   <div id="loading" class="active"></div>
-  <nav id="menu">
+  <nav id="menu" class="hide">
    <div class="inner flex-row-vertical">
   <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
       <i class="icon icon-lg icon-close"></i>
   </a>
   <div class="brand-wrap">
     <div class="brand">
-      <a href="/" class="avatar"><img src="undefined"></a>
+      <a href="/" class="avatar"><img src="/img/avatar.gif"></a>
       <hgroup class="introduce">
         <h5 class="nickname">王中阳</h5>
         <a href="mailto:425772719@qq.com" title="425772719@qq.com" class="mail">425772719@qq.com</a>
@@ -72,6 +76,48 @@ git每次提交代码，都要写commit message，否则不允许提交。1$ git
   </div>
   <ul class="nav flex-col">
     
+        <li class="waves-block waves-effect">
+          <a href="/">
+            <i class="icon icon-lg icon-home"></i>
+            主页
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/archives">
+            <i class="icon icon-lg icon-archives"></i>
+            归档
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/tags">
+            <i class="icon icon-lg icon-tags"></i>
+            标签
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="http://blog.csdn.net/w425772719" target="_blank">
+            <i class="icon icon-lg icon-heart"></i>
+            CSDN
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="https://github.com/wangzhongyang00" target="_blank">
+            <i class="icon icon-lg icon-github"></i>
+            github
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/about">
+            <i class="icon icon-lg icon-link"></i>
+            关于
+          </a>
+        </li>
+    
   </ul>
 
   <footer class="footer">
@@ -79,7 +125,7 @@ git每次提交代码，都要写commit message，否则不允许提交。1$ git
   <p>王中阳 &copy; 2016</p>
   <p>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme
   <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></p>
-  <a href="undefined" target="_blank" class="rss" title="rss"><i class="icon icon-2x icon-rss-square"></i></a>
+  <a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-2x icon-rss-square"></i></a>
 </footer>
 </div>
   </nav>
@@ -126,6 +172,10 @@ git每次提交代码，都要写commit message，否则不允许提交。1$ git
 
             
 
+            
+            <nav class="post-toc-wrap" id="post-toc">
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#一-commit-message-的作用"><span class="post-toc-number">1.</span> <span class="post-toc-text">一.commit message 的作用</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#二-commit-message-的格式"><span class="post-toc-number">2.</span> <span class="post-toc-text">二,commit message 的格式</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2-1-header"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">2.1 header</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-type"><span class="post-toc-number">2.1.1.</span> <span class="post-toc-text">(1)type</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-scope"><span class="post-toc-number">2.1.2.</span> <span class="post-toc-text">(2)scope</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3-subject"><span class="post-toc-number">2.1.3.</span> <span class="post-toc-text">(3)subject</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2-2-body"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">2.2 body</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2-3-footer"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">2.3 footer</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#（1）不兼容变动"><span class="post-toc-number">2.3.1.</span> <span class="post-toc-text">（1）不兼容变动</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#（2）关闭-Issue"><span class="post-toc-number">2.3.2.</span> <span class="post-toc-text">（2）关闭 Issue</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2-4-Revert"><span class="post-toc-number">2.4.</span> <span class="post-toc-text">2.4 Revert</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#三-Commitizen"><span class="post-toc-number">3.</span> <span class="post-toc-text">三.Commitizen</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#四-生成change-log"><span class="post-toc-number">4.</span> <span class="post-toc-text">四.生成change log</span></a></li></ol>
+            </nav>
             
         </aside>
 
@@ -236,13 +286,12 @@ git每次提交代码，都要写commit message，否则不允许提交。1$ git
   
 </nav>
             
-            
-        </div>
-    </div>
-</article>
-    </div>
-  </main>
-<div class="mask" id="mask"></div>
+            <div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="git commit message和change log编写指南" data-title="git commit message和change log编写指南" data-url="http://wangzhongyang.ren/2016/07/26/git-commit-message-change-log/index.html"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">var duoshuoQuery={short_name:"NNorLand"};!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"==document.location.protocol?"https:":"http:")+"//static.duoshuo.com/embed.js",t.charset="UTF-8",(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(t)}();</script><!-- 多说公共JS代码 end --></div></div></div></article></div></main><div class="mask" id="mask"></div>
 <a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
 <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script><script src="/js/main.js"></script><div class="search-panel" id="search-panel">
     <ul class="search-result" id="search-result"></ul>
@@ -259,4 +308,4 @@ git每次提交代码，都要写commit message，否则不允许提交。1$ git
         </div>
     </a>
 </li>
-</script><script src="/js/search.js"></script></body>
+</script><script src="/js/search.js"></script><script src="http://s95.cnzz.com/z_stat.php?id=hooray_K@163.com&web_id=hooray_K@163.com"></script></body>

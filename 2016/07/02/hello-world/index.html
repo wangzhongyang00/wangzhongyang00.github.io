@@ -6,6 +6,8 @@
   <title>hexo第一天 | 王中阳 | 汇细流，成江海;积跬步，致千里。</title>
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
   
+  <meta name="theme-color" content="#3F51B5">
+  
   
   <meta name="keywords" content="">
   <meta name="description" content="今天利用coding的webIDE搭建了hexo博客。回来记录一下。
@@ -30,6 +32,8 @@
 前言 之前也在github上用过hexo搭建博客，一直感觉挺好的，除了有一个问题——搭建写作环境。由于Hexo是基于Node.js的，所以需要在本地电脑上安装Node.js，然后再安装Hexo，还得安装Git，一步步配置环境，有点繁琐。所以很明显存在一个问题——重装电脑后，又要配置环境，或者不能在任意一终端进行写作。现在终于找到">
 <meta name="twitter:image" content="http://o9yayw1x8.bkt.clouddn.com/image/hexo/2016/07/1%20%285%29.png">
   
+    <link rel="alternative" href="/atom.xml" title="王中阳" type="application/atom+xml">
+  
   <meta name="summary" content="&lt;p&gt;今天利用coding的webIDE搭建了hexo博客。回来记录一下。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;前言&lt;/strong&gt; 之前也在github上用过hexo搭建博客，一直感觉挺好的，除了有一个问题——搭建写作环境。&lt;br&gt;由于Hexo是基于Node.js的，所以需要在本地电脑上安装Node.js，然后再安装Hexo，还得安装Git，一步步配置环境，有点繁琐。所以很明显存在一个问题——重装电脑后，又要配置环境，或者不能在任意一终端进行写作。&lt;br&gt;现在终于找到一个方法可以实现“Set up once, write everywhere”。这就是Coding.net的&lt;code&gt;WebIDE&lt;/code&gt;。&lt;/p&gt;
 &lt;p&gt;coding的webIDE出来时间不是很长，成熟度不如koding和c9，但是胜在访问速度快。。。毕竟是国内的服务器。coding webIDE使用不当的话，偶尔会出现一些问题，比如打不开等情况，可以点击反馈，让coding的官方人员帮你解决。&lt;/p&gt;
@@ -43,19 +47,19 @@
 &lt;li&gt;&lt;a href=&quot;http://www.jianshu.com/p/d78eeae3d659&quot;&gt;Hexo静态博客使用指南&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;">
-  <link rel="shortcut icon" href="/">
+  <link rel="shortcut icon" href="/favicon.ico">
   <link rel="stylesheet" href="/css/style.css">
 </head></html>
 <body>
   <div id="loading" class="active"></div>
-  <nav id="menu">
+  <nav id="menu" class="hide">
    <div class="inner flex-row-vertical">
   <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
       <i class="icon icon-lg icon-close"></i>
   </a>
   <div class="brand-wrap">
     <div class="brand">
-      <a href="/" class="avatar"><img src="undefined"></a>
+      <a href="/" class="avatar"><img src="/img/avatar.gif"></a>
       <hgroup class="introduce">
         <h5 class="nickname">王中阳</h5>
         <a href="mailto:425772719@qq.com" title="425772719@qq.com" class="mail">425772719@qq.com</a>
@@ -64,6 +68,48 @@
   </div>
   <ul class="nav flex-col">
     
+        <li class="waves-block waves-effect">
+          <a href="/">
+            <i class="icon icon-lg icon-home"></i>
+            主页
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/archives">
+            <i class="icon icon-lg icon-archives"></i>
+            归档
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/tags">
+            <i class="icon icon-lg icon-tags"></i>
+            标签
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="http://blog.csdn.net/w425772719" target="_blank">
+            <i class="icon icon-lg icon-heart"></i>
+            CSDN
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="https://github.com/wangzhongyang00" target="_blank">
+            <i class="icon icon-lg icon-github"></i>
+            github
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/about">
+            <i class="icon icon-lg icon-link"></i>
+            关于
+          </a>
+        </li>
+    
   </ul>
 
   <footer class="footer">
@@ -71,7 +117,7 @@
   <p>王中阳 &copy; 2016</p>
   <p>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme
   <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></p>
-  <a href="undefined" target="_blank" class="rss" title="rss"><i class="icon icon-2x icon-rss-square"></i></a>
+  <a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-2x icon-rss-square"></i></a>
 </footer>
 </div>
   </nav>
@@ -118,6 +164,10 @@
 
             
 
+            
+            <nav class="post-toc-wrap" id="post-toc">
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#一、准备工作"><span class="post-toc-number">1.</span> <span class="post-toc-text">一、准备工作</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#二、正式开始"><span class="post-toc-number">2.</span> <span class="post-toc-text">二、正式开始</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#三、添加、删除、编辑文章"><span class="post-toc-number">3.</span> <span class="post-toc-text">三、添加、删除、编辑文章</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1、创建文章"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">1、创建文章</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2、删除文章"><span class="post-toc-number">3.2.</span> <span class="post-toc-text">2、删除文章</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#3、编辑文章"><span class="post-toc-number">3.3.</span> <span class="post-toc-text">3、编辑文章</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#四、将hexo代码同步到hexo分支。"><span class="post-toc-number">4.</span> <span class="post-toc-text">四、将hexo代码同步到hexo分支。</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#五、hexo主题"><span class="post-toc-number">5.</span> <span class="post-toc-text">五、hexo主题</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#六、关于404页面"><span class="post-toc-number">6.</span> <span class="post-toc-text">六、关于404页面</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#七、试用过程遇到的问题"><span class="post-toc-number">7.</span> <span class="post-toc-text">七、试用过程遇到的问题</span></a></li></ol>
+            </nav>
             
         </aside>
 
@@ -314,13 +364,12 @@
   
 </nav>
             
-            
-        </div>
-    </div>
-</article>
-    </div>
-  </main>
-<div class="mask" id="mask"></div>
+            <div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="hexo第一天" data-title="hexo第一天" data-url="http://wangzhongyang.ren/2016/07/02/hello-world/index.html"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">var duoshuoQuery={short_name:"NNorLand"};!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"==document.location.protocol?"https:":"http:")+"//static.duoshuo.com/embed.js",t.charset="UTF-8",(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(t)}();</script><!-- 多说公共JS代码 end --></div></div></div></article></div></main><div class="mask" id="mask"></div>
 <a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
 <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script><script src="/js/main.js"></script><div class="search-panel" id="search-panel">
     <ul class="search-result" id="search-result"></ul>
@@ -337,4 +386,4 @@
         </div>
     </a>
 </li>
-</script><script src="/js/search.js"></script></body>
+</script><script src="/js/search.js"></script><script src="http://s95.cnzz.com/z_stat.php?id=hooray_K@163.com&web_id=hooray_K@163.com"></script></body>

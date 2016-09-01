@@ -6,6 +6,8 @@
   <title>CSS小技巧整理 | 王中阳 | 汇细流，成江海;积跬步，致千里。</title>
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
   
+  <meta name="theme-color" content="#3F51B5">
+  
   
   <meta name="keywords" content="CSS">
   <meta name="description" content="CSS小技巧整理">
@@ -19,20 +21,22 @@
 <meta name="twitter:title" content="CSS小技巧整理">
 <meta name="twitter:description" content="CSS小技巧整理">
   
+    <link rel="alternative" href="/atom.xml" title="王中阳" type="application/atom+xml">
+  
   <meta name="summary" content="&lt;h1 id=&quot;CSS小技巧整理&quot;&gt;&lt;a href=&quot;#CSS小技巧整理&quot; class=&quot;headerlink&quot; title=&quot;CSS小技巧整理&quot;&gt;&lt;/a&gt;CSS小技巧整理&lt;/h1&gt;">
-  <link rel="shortcut icon" href="/">
+  <link rel="shortcut icon" href="/favicon.ico">
   <link rel="stylesheet" href="/css/style.css">
 </head></html>
 <body>
   <div id="loading" class="active"></div>
-  <nav id="menu">
+  <nav id="menu" class="hide">
    <div class="inner flex-row-vertical">
   <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
       <i class="icon icon-lg icon-close"></i>
   </a>
   <div class="brand-wrap">
     <div class="brand">
-      <a href="/" class="avatar"><img src="undefined"></a>
+      <a href="/" class="avatar"><img src="/img/avatar.gif"></a>
       <hgroup class="introduce">
         <h5 class="nickname">王中阳</h5>
         <a href="mailto:425772719@qq.com" title="425772719@qq.com" class="mail">425772719@qq.com</a>
@@ -41,6 +45,48 @@
   </div>
   <ul class="nav flex-col">
     
+        <li class="waves-block waves-effect">
+          <a href="/">
+            <i class="icon icon-lg icon-home"></i>
+            主页
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/archives">
+            <i class="icon icon-lg icon-archives"></i>
+            归档
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/tags">
+            <i class="icon icon-lg icon-tags"></i>
+            标签
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="http://blog.csdn.net/w425772719" target="_blank">
+            <i class="icon icon-lg icon-heart"></i>
+            CSDN
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="https://github.com/wangzhongyang00" target="_blank">
+            <i class="icon icon-lg icon-github"></i>
+            github
+          </a>
+        </li>
+    
+        <li class="waves-block waves-effect">
+          <a href="/about">
+            <i class="icon icon-lg icon-link"></i>
+            关于
+          </a>
+        </li>
+    
   </ul>
 
   <footer class="footer">
@@ -48,7 +94,7 @@
   <p>王中阳 &copy; 2016</p>
   <p>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme
   <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></p>
-  <a href="undefined" target="_blank" class="rss" title="rss"><i class="icon icon-2x icon-rss-square"></i></a>
+  <a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-2x icon-rss-square"></i></a>
 </footer>
 </div>
   </nav>
@@ -96,6 +142,10 @@
             
 
             
+            <nav class="post-toc-wrap" id="post-toc">
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#CSS小技巧整理"><span class="post-toc-number">1.</span> <span class="post-toc-text">CSS小技巧整理</span></a></li></ol>
+            </nav>
+            
         </aside>
 
         <div class="post-main">
@@ -103,7 +153,7 @@
             <div class="post-content" id="post-content" itemprop="postContent">
             <h1 id="CSS小技巧整理"><a href="#CSS小技巧整理" class="headerlink" title="CSS小技巧整理"></a>CSS小技巧整理</h1><a id="more"></a>
 <ol>
-<li>某一元素高度等于宽度<br>示例:<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span><span class="undefined"></span></div><div class="line">#container &#123;</div><div class="line">    width: 80%;</div><div class="line">    height: 500px;</div><div class="line">&#125;</div><div class="line">.attr &#123;</div><div class="line">    width: 50%;</div><div class="line">    height: 0;</div><div class="line">    padding-bottom: 50%;</div><div class="line">    background-color: #008b57;</div><div class="line">&#125;</div><div class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">'container'</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">'attr'</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<li>某一元素高度等于宽度<br>示例:<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span><span class="css"></span></div><div class="line"><span class="selector-id">#container</span> &#123;</div><div class="line">    <span class="attribute">width</span>: <span class="number">80%</span>;</div><div class="line">    <span class="attribute">height</span>: <span class="number">500px</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.attr</span> &#123;</div><div class="line">    <span class="attribute">width</span>: <span class="number">50%</span>;</div><div class="line">    <span class="attribute">height</span>: <span class="number">0</span>;</div><div class="line">    <span class="attribute">padding-bottom</span>: <span class="number">50%</span>;</div><div class="line">    <span class="attribute">background-color</span>: <span class="number">#008b57</span>;</div><div class="line">&#125;</div><div class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">'container'</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">'attr'</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
 </li>
 </ol>
 <p>来源: <a href="https://segmentfault.com/q/1010000002629233" title="blank" target="_blank" rel="external">css中如何规定某一元素高度等于其宽度</a></p>
@@ -138,13 +188,12 @@
   
 </nav>
             
-            
-        </div>
-    </div>
-</article>
-    </div>
-  </main>
-<div class="mask" id="mask"></div>
+            <div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="CSS小技巧整理" data-title="CSS小技巧整理" data-url="http://wangzhongyang.ren/2016/08/18/FrontEnd/css-skill/index.html"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">var duoshuoQuery={short_name:"NNorLand"};!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"==document.location.protocol?"https:":"http:")+"//static.duoshuo.com/embed.js",t.charset="UTF-8",(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(t)}();</script><!-- 多说公共JS代码 end --></div></div></div></article></div></main><div class="mask" id="mask"></div>
 <a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
 <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script><script src="/js/main.js"></script><div class="search-panel" id="search-panel">
     <ul class="search-result" id="search-result"></ul>
@@ -161,4 +210,4 @@
         </div>
     </a>
 </li>
-</script><script src="/js/search.js"></script></body>
+</script><script src="/js/search.js"></script><script src="http://s95.cnzz.com/z_stat.php?id=hooray_K@163.com&web_id=hooray_K@163.com"></script></body>
