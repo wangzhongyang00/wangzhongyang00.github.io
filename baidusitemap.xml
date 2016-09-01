@@ -5,18 +5,32 @@
     
     
   <url>
-    <loc>http://wangzhongyang.ren/2016/08/04/FrontEnd/mobile-apter/</loc>
+    <loc>http://wangzhongyang.ren/2016/07/10/7niu/</loc>
     <lastmod>2016-08-31T11:49:46.019Z</lastmod>
     <data>
         <display>
-        <title>移动端高清屏图片适配</title>
-        <pubTime>2016-08-04T08:48:59.000Z</pubTime>
+        <title>7niu</title>
+        <pubTime>2016-07-10T05:08:29.000Z</pubTime>
         
-        <tag>html</tag>
+        <tag>7niu</tag>
          
-        <tag>CSS</tag>
          
-        <tag>移动开发</tag>
+           
+        </display>
+    </data>
+    </url>
+
+    
+    
+  <url>
+    <loc>http://wangzhongyang.ren/2016/08/17/mac-software/</loc>
+    <lastmod>2016-08-31T11:49:46.019Z</lastmod>
+    <data>
+        <display>
+        <title>Mac软件</title>
+        <pubTime>2016-08-17T09:07:29.000Z</pubTime>
+        
+        <tag>Mac</tag>
          
          
            
@@ -34,40 +48,6 @@
         <pubTime>2016-07-12T12:33:05.000Z</pubTime>
         
         <tag>Java</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wangzhongyang.ren/2016/07/26/git-commit-message-change-log/</loc>
-    <lastmod>2016-08-31T11:49:46.019Z</lastmod>
-    <data>
-        <display>
-        <title>git commit message和change log编写指南</title>
-        <pubTime>2016-07-26T03:28:53.000Z</pubTime>
-        
-        <tag>Git</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wangzhongyang.ren/2016/08/17/mac-software/</loc>
-    <lastmod>2016-08-31T11:49:46.019Z</lastmod>
-    <data>
-        <display>
-        <title>Mac软件</title>
-        <pubTime>2016-08-17T09:07:29.000Z</pubTime>
-        
-        <tag>Mac</tag>
          
          
            
@@ -96,27 +76,6 @@
 
     
   <url>
-    <loc>http://wangzhongyang.ren/2016/08/22/FrontEnd/ios-web-fixed-input-bug/</loc>
-    <lastmod>2016-08-31T11:49:46.019Z</lastmod>
-    <data>
-        <display>
-        <title>Web移动端Fixed布局的解决方案</title>
-        <pubTime>2016-08-22T06:32:57.000Z</pubTime>
-        
-        <tag>html</tag>
-         
-        <tag>CSS</tag>
-         
-        <tag>移动开发</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://wangzhongyang.ren/2016/08/18/FrontEnd/css-skill/</loc>
     <lastmod>2016-08-31T11:49:46.019Z</lastmod>
     <data>
@@ -135,14 +94,18 @@
     
     
   <url>
-    <loc>http://wangzhongyang.ren/2016/08/29/FrontEnd/jquery-on-append/</loc>
+    <loc>http://wangzhongyang.ren/2016/08/22/FrontEnd/ios-web-fixed-input-bug/</loc>
     <lastmod>2016-08-31T11:49:46.019Z</lastmod>
     <data>
         <display>
-        <title>jQuery插入元素动态绑定事件</title>
-        <pubTime>2016-08-29T03:53:00.000Z</pubTime>
+        <title>Web移动端Fixed布局的解决方案</title>
+        <pubTime>2016-08-22T06:32:57.000Z</pubTime>
         
-        <tag>JavaScript</tag>
+        <tag>CSS</tag>
+         
+        <tag>html</tag>
+         
+        <tag>移动开发</tag>
          
          
            
@@ -152,14 +115,56 @@
 
     
   <url>
-    <loc>http://wangzhongyang.ren/2016/07/10/7niu/</loc>
+    <loc>http://wangzhongyang.ren/2016/08/04/FrontEnd/mobile-apter/</loc>
     <lastmod>2016-08-31T11:49:46.019Z</lastmod>
     <data>
         <display>
-        <title>7niu</title>
-        <pubTime>2016-07-10T05:08:29.000Z</pubTime>
+        <title>移动端高清屏图片适配</title>
+        <pubTime>2016-08-04T08:48:59.000Z</pubTime>
         
-        <tag>7niu</tag>
+        <tag>CSS</tag>
+         
+        <tag>html</tag>
+         
+        <tag>移动开发</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wangzhongyang.ren/2016/07/26/git-commit-message-change-log/</loc>
+    <lastmod>2016-08-31T11:49:46.019Z</lastmod>
+    <data>
+        <display>
+        <title>git commit message和change log编写指南</title>
+        <pubTime>2016-07-26T03:28:53.000Z</pubTime>
+        
+        <tag>Git</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wangzhongyang.ren/2016/08/19/JavaScript/node-js-swig-engine/</loc>
+    <lastmod>2016-08-31T11:49:46.019Z</lastmod>
+    <data>
+        <display>
+        <title>swig模板引擎</title>
+        <pubTime>2016-08-19T09:30:53.000Z</pubTime>
+        
+        <tag>html</tag>
+         
+        <tag>JavaScript</tag>
+         
+        <tag>Nodejs</tag>
          
          
            
@@ -205,18 +210,14 @@
 
     
   <url>
-    <loc>http://wangzhongyang.ren/2016/08/19/JavaScript/node-js-swig-engine/</loc>
+    <loc>http://wangzhongyang.ren/2016/08/24/%E6%9D%82%E8%AE%B0/Financial-independence/</loc>
     <lastmod>2016-08-31T11:49:46.019Z</lastmod>
     <data>
         <display>
-        <title>swig模板引擎</title>
-        <pubTime>2016-08-19T09:30:53.000Z</pubTime>
+        <title>财务自由</title>
+        <pubTime>2016-08-24T14:08:33.000Z</pubTime>
         
-        <tag>html</tag>
-         
-        <tag>JavaScript</tag>
-         
-        <tag>Nodejs</tag>
+        <tag>杂记</tag>
          
          
            
@@ -243,14 +244,14 @@
 
     
   <url>
-    <loc>http://wangzhongyang.ren/2016/08/24/%E6%9D%82%E8%AE%B0/Financial-independence/</loc>
+    <loc>http://wangzhongyang.ren/2016/08/19/%E6%9D%82%E8%AE%B0/nelumbo-nucifera-plated/</loc>
     <lastmod>2016-08-31T11:49:46.019Z</lastmod>
     <data>
         <display>
-        <title>财务自由</title>
-        <pubTime>2016-08-24T14:08:33.000Z</pubTime>
+        <title>碗莲种植经验</title>
+        <pubTime>2016-08-19T14:01:36.000Z</pubTime>
         
-        <tag>杂记</tag>
+        <tag>花鸟虫鱼</tag>
          
          
            
@@ -279,14 +280,14 @@
 
     
   <url>
-    <loc>http://wangzhongyang.ren/2016/08/19/%E6%9D%82%E8%AE%B0/nelumbo-nucifera-plated/</loc>
+    <loc>http://wangzhongyang.ren/2016/08/29/FrontEnd/jquery-on-append/</loc>
     <lastmod>2016-08-31T11:49:46.019Z</lastmod>
     <data>
         <display>
-        <title>碗莲种植经验</title>
-        <pubTime>2016-08-19T14:01:36.000Z</pubTime>
+        <title>jQuery插入元素动态绑定事件</title>
+        <pubTime>2016-08-29T03:53:00.000Z</pubTime>
         
-        <tag>花鸟虫鱼</tag>
+        <tag>JavaScript</tag>
          
          
            
@@ -294,7 +295,6 @@
     </data>
     </url>
 
-    
     
   <url>
     <loc>http://wangzhongyang.ren/2016/07/02/hello-world/</loc>
@@ -319,9 +319,9 @@
         <title>div实现高度撑开的输入框</title>
         <pubTime>2016-08-01T01:23:22.000Z</pubTime>
         
-        <tag>html</tag>
-         
         <tag>CSS</tag>
+         
+        <tag>html</tag>
          
          
            
