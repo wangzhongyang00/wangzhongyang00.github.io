@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>王中阳</title>
-  <subtitle>汇细流，成江海;积跬步，致千里。</subtitle>
+  <subtitle>汇细流，成江海；积跬步，致千里。</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://wangzhongyang.ren/"/>

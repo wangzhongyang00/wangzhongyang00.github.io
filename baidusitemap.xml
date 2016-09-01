@@ -23,23 +23,6 @@
     
     
   <url>
-    <loc>http://wangzhongyang.ren/2016/08/17/mac-software/</loc>
-    <lastmod>2016-08-31T11:49:46.019Z</lastmod>
-    <data>
-        <display>
-        <title>Mac软件</title>
-        <pubTime>2016-08-17T09:07:29.000Z</pubTime>
-        
-        <tag>Mac</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://wangzhongyang.ren/2016/07/12/icstest-java/</loc>
     <lastmod>2016-08-31T11:49:46.019Z</lastmod>
     <data>
@@ -75,6 +58,22 @@
     </url>
 
     
+  <url>
+    <loc>http://wangzhongyang.ren/2016/08/17/mac-software/</loc>
+    <lastmod>2016-08-31T11:49:46.019Z</lastmod>
+    <data>
+        <display>
+        <title>Mac软件</title>
+        <pubTime>2016-08-17T09:07:29.000Z</pubTime>
+        
+        <tag>Mac</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
     
   <url>
     <loc>http://wangzhongyang.ren/2016/08/18/FrontEnd/css-skill/</loc>
@@ -92,6 +91,7 @@
     </data>
     </url>
 
+    
     
   <url>
     <loc>http://wangzhongyang.ren/2016/08/22/FrontEnd/ios-web-fixed-input-bug/</loc>
@@ -140,6 +140,23 @@
         <pubTime>2016-07-26T03:28:53.000Z</pubTime>
         
         <tag>Git</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wangzhongyang.ren/2016/07/05/JavaScript/JavaScript-firstday/</loc>
+    <lastmod>2016-08-31T11:49:46.019Z</lastmod>
+    <data>
+        <display>
+        <title>JavaScript基础巩固第一天</title>
+        <pubTime>2016-07-05T06:44:49.000Z</pubTime>
+        
+        <tag>JavaScript</tag>
          
          
            
@@ -206,40 +223,6 @@
 
     
   <url>
-    <loc>http://wangzhongyang.ren/2016/08/17/%E6%9D%82%E8%AE%B0/give-it-five-minutes/</loc>
-    <lastmod>2016-08-31T11:49:46.019Z</lastmod>
-    <data>
-        <display>
-        <title>Give it five minutes</title>
-        <pubTime>2016-08-17T07:11:44.000Z</pubTime>
-        
-        <tag>杂记</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://wangzhongyang.ren/2016/07/05/JavaScript/JavaScript-firstday/</loc>
-    <lastmod>2016-08-31T11:49:46.019Z</lastmod>
-    <data>
-        <display>
-        <title>JavaScript基础巩固第一天</title>
-        <pubTime>2016-07-05T06:44:49.000Z</pubTime>
-        
-        <tag>JavaScript</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://wangzhongyang.ren/2016/08/19/%E6%9D%82%E8%AE%B0/nelumbo-nucifera-plated/</loc>
     <lastmod>2016-08-31T11:49:46.019Z</lastmod>
     <data>
@@ -248,6 +231,23 @@
         <pubTime>2016-08-19T14:01:36.000Z</pubTime>
         
         <tag>花鸟虫鱼</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://wangzhongyang.ren/2016/08/17/%E6%9D%82%E8%AE%B0/give-it-five-minutes/</loc>
+    <lastmod>2016-08-31T11:49:46.019Z</lastmod>
+    <data>
+        <display>
+        <title>Give it five minutes</title>
+        <pubTime>2016-08-17T07:11:44.000Z</pubTime>
+        
+        <tag>杂记</tag>
          
          
            
