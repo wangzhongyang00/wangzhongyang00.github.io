@@ -7,6 +7,14 @@
     </url>
 
     <url>
+        <loc>http://wangzhongyang.ren/2016/09/02/WEB%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%A6%82%E4%BD%95%E7%AE%A1%E7%90%86%E5%8F%8A%E4%BC%98%E5%8C%96%E5%86%85%E5%AD%98%EF%BC%9F/</loc>
+        <lastmod>2016-09-02T10:45:42.508Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://wangzhongyang.ren/2016/09/02/UI%E4%BC%98%E5%8C%96%E6%80%BB%E7%BB%93/</loc>
         <lastmod>2016-09-02T10:34:29.895Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -31,7 +39,7 @@
     </url>
 
     <url>
-        <loc>http://wangzhongyang.ren/2016/07/12/icstest-java/</loc>
+        <loc>http://wangzhongyang.ren/2016/08/17/mac-software/</loc>
         <lastmod>2016-08-31T11:49:46.019Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -39,7 +47,7 @@
     </url>
 
     <url>
-        <loc>http://wangzhongyang.ren/2016/08/17/mac-software/</loc>
+        <loc>http://wangzhongyang.ren/2016/07/12/icstest-java/</loc>
         <lastmod>2016-08-31T11:49:46.019Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -55,7 +63,7 @@
     </url>
 
     <url>
-        <loc>http://wangzhongyang.ren/2016/08/29/FrontEnd/jquery-on-append/</loc>
+        <loc>http://wangzhongyang.ren/2016/08/18/FrontEnd/css-skill/</loc>
         <lastmod>2016-08-31T11:49:46.019Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -63,7 +71,15 @@
     </url>
 
     <url>
-        <loc>http://wangzhongyang.ren/2016/08/18/FrontEnd/css-skill/</loc>
+        <loc>http://wangzhongyang.ren/2016/08/04/FrontEnd/mobile-apter/</loc>
+        <lastmod>2016-08-31T11:49:46.019Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://wangzhongyang.ren/2016/08/29/FrontEnd/jquery-on-append/</loc>
         <lastmod>2016-08-31T11:49:46.019Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -79,14 +95,6 @@
     </url>
 
     <url>
-        <loc>http://wangzhongyang.ren/2016/08/19/JavaScript/node-js-swig-engine/</loc>
-        <lastmod>2016-08-31T11:49:46.019Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>http://wangzhongyang.ren/2016/07/05/JavaScript/JavaScript-firstday/</loc>
         <lastmod>2016-08-31T11:49:46.019Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -95,7 +103,7 @@
     </url>
 
     <url>
-        <loc>http://wangzhongyang.ren/2016/08/04/FrontEnd/mobile-apter/</loc>
+        <loc>http://wangzhongyang.ren/2016/08/19/JavaScript/node-js-swig-engine/</loc>
         <lastmod>2016-08-31T11:49:46.019Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -119,6 +127,14 @@
     </url>
 
     <url>
+        <loc>http://wangzhongyang.ren/2016/08/23/%E6%9D%82%E8%AE%B0/tortoise-treat-the-disease/</loc>
+        <lastmod>2016-08-31T11:49:46.019Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://wangzhongyang.ren/2016/08/17/%E6%9D%82%E8%AE%B0/give-it-five-minutes/</loc>
         <lastmod>2016-08-31T11:49:46.019Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -128,14 +144,6 @@
 
     <url>
         <loc>http://wangzhongyang.ren/2016/08/19/%E6%9D%82%E8%AE%B0/nelumbo-nucifera-plated/</loc>
-        <lastmod>2016-08-31T11:49:46.019Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://wangzhongyang.ren/2016/08/23/%E6%9D%82%E8%AE%B0/tortoise-treat-the-disease/</loc>
         <lastmod>2016-08-31T11:49:46.019Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>

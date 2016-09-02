@@ -16,14 +16,14 @@
     </url>
 
     <url>
-        <loc>http://wangzhongyang.ren/tags/Java/</loc>
+        <loc>http://wangzhongyang.ren/tags/Mac/</loc>
         <lastmod>2016-08-31T11:49:46.019Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://wangzhongyang.ren/tags/Mac/</loc>
+        <loc>http://wangzhongyang.ren/tags/Java/</loc>
         <lastmod>2016-08-31T11:49:46.019Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -58,14 +58,14 @@
     </url>
 
     <url>
-        <loc>http://wangzhongyang.ren/tags/JavaScript/</loc>
+        <loc>http://wangzhongyang.ren/tags/%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91/</loc>
         <lastmod>2016-08-31T11:49:46.019Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://wangzhongyang.ren/tags/%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91/</loc>
+        <loc>http://wangzhongyang.ren/tags/JavaScript/</loc>
         <lastmod>2016-08-31T11:49:46.019Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -109,6 +109,13 @@
     <url>
         <loc>http://wangzhongyang.ren/tags/android/</loc>
         <lastmod>2016-09-02T10:34:29.895Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://wangzhongyang.ren/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/</loc>
+        <lastmod>2016-09-02T10:45:42.508Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

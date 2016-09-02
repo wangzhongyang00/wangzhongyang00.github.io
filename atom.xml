@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://wangzhongyang.ren/"/>
-  <updated>2016-09-02T10:34:29.895Z</updated>
+  <updated>2016-09-02T10:45:42.508Z</updated>
   <id>http://wangzhongyang.ren/</id>
   
   <author>
@@ -14,6 +14,122 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>WEB服务器如何管理及优化内存？</title>
+    <link href="http://wangzhongyang.ren/2016/09/02/WEB%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%A6%82%E4%BD%95%E7%AE%A1%E7%90%86%E5%8F%8A%E4%BC%98%E5%8C%96%E5%86%85%E5%AD%98%EF%BC%9F/"/>
+    <id>http://wangzhongyang.ren/2016/09/02/WEB服务器如何管理及优化内存？/</id>
+    <published>2016-09-02T10:42:34.000Z</published>
+    <updated>2016-09-02T10:45:42.508Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote>
+<p>第三方文档</p>
+</blockquote>
+<p><a href="http://www.cnblogs.com/web-ed2/articles/4315540.html" target="_blank" rel="external">本文参考链接，感谢作者</a></p>
+<blockquote>
+<p>节选自上文链接的思路</p>
+</blockquote>
+<ol>
+<li>Ngnix+PHP-FPM的工作方式，似乎是最节省系统资源的web系统工作方式。</li>
+<li>当然，具体的技术选型更多的应该参考自己想买的业务需求。</li>
+</ol>
+<h4 id="一-原因：越来越多的并发连接数"><a href="#一-原因：越来越多的并发连接数" class="headerlink" title="一 原因：越来越多的并发连接数"></a>一 原因：越来越多的并发连接数</h4><ol>
+<li>页面的元素增多，交互复杂</li>
+<li>主流浏览器的连接数在增加</li>
+</ol>
+<h4 id="二-辅助方案：通过WEB前端优化，降低服务器的压力"><a href="#二-辅助方案：通过WEB前端优化，降低服务器的压力" class="headerlink" title="二 辅助方案：通过WEB前端优化，降低服务器的压力"></a>二 辅助方案：通过WEB前端优化，降低服务器的压力</h4><ol>
+<li>减少web请求</li>
+<li>减轻web请求</li>
+<li>合并页面请求</li>
+</ol>
+<h4 id="三-推荐方案：节约web服务器的内存"><a href="#三-推荐方案：节约web服务器的内存" class="headerlink" title="三 推荐方案：节约web服务器的内存"></a>三 推荐方案：节约web服务器的内存</h4><ol>
+<li>prefork MPM(Apache服务器多道处理器模块),多进程工作模式：<ol>
+<li>主进程生成后，他先完成初始化的工作，通过fork的方式预先产生一批子进程（子进程复制父进程的内存空间，不需要再做初始化的工作）</li>
+<li>多进程的好处：进程之间的内存数据是互不干扰的。</li>
+<li>优点：成熟稳定，兼容新老版本，不用担心线程安全的问题</li>
+<li>缺点：不适合高并发的业务场景，一个服务进程占很多内存</li>
+</ol>
+</li>
+<li>worker MPM, 多线程和多进程的混合模式<ol>
+<li>和prework一样，也预先fork了几个子进程（数量少），然后每个子进程创建几个线程（包含一个监听线程）。每个请求过来，会交给一个线程来服务。（线程比进程轻量级，所以内存占用更少）。</li>
+<li>注意：并没有解决“keep-alive”长连接的问题，只是把对象编程了更轻量级的线程</li>
+<li>疑问:既然多线程轻量级，为什么不完全采用多线程的方式呢？因为多进程能确保程序的稳定性，如果采用单进程多线程的方式，有一个线程挂了，那么该进程下的其他线程也挂了，会导致全军覆没。</li>
+<li>优点：更优秀的内存管理，高并发场景下表现更优秀。</li>
+<li>缺点：需要考虑线程安全问题，需要引入锁，加大cpu的消耗。</li>
+</ol>
+</li>
+<li>event MPM<ol>
+<li>和worker的方式很像，最大的差别在于解决了“keep-alive”场景下，长期被占用的线程资源问题。</li>
+<li>注意:event MPM遇到不兼容的模块时会失效，将回退到worker模式，一个工作线程处理一个请求。</li>
+<li>Apache的3种模式中，event MPM是最节约内存的。（需要Linux系统对<a href="http://baike.baidu.com/link?url=F6mSjthXnihIvZp2g50AA82xZYqR2GYnZ0mkUpslkaocR-ii0yyLfzDu-J2zWiriOXrojEcUSMQk_va4PcIQZ_" target="_blank" rel="external">Epoll</a>的支持才能启用）</li>
+</ol>
+</li>
+<li>使用轻量级的Ngnix作为web服务器<ol>
+<li>Ngnix本身就是一个轻量级的web服务器，天生萝莉，比Apache要轻量。</li>
+<li><a href="http://baike.baidu.com/link?url=96gLGLWl0PaGX4-PdWgRU0FzC5pdQ-5aqCFvk6iPYo2dymFLeX8dVENX8ocsOIrnExZRY_OBnIl2d2-Ai-wy3a" target="_blank" rel="external">Ngnix</a>通过一个进程来服务N个链接，采用的方式不同于Apache的方式。</li>
+</ol>
+</li>
+<li>sendfile节约内存（这个概念非常重要）<ol>
+<li>sendfile可以减少数据到“用户态内存空间”（用户缓存区）的拷贝，进而减少对内存的占用。</li>
+<li>为了更好的理解上面所说的原理。笔者先引入下面的概念：<a href="http://www.cnblogs.com/viviwind/archive/2012/09/22/2698450.html" target="_blank" rel="external">内核态和用户态的区别</a>，内核态的优先级高Ring0，而用户态（运行态）的优先级低Ring3;并且当执行用户程序是突然中断，运行状态会从“用户态”切换到“内核态”。</li>
+<li>一般情况下，用户态（程序所在的内存空间）不能直接操作（读写等）各种设备（磁盘，网络，终端等）的。需要使用<a href="http://baike.baidu.com/link?url=-VyqJDrRt-lnKOnzZjx1wRmJxdFTYQibhqwmmm67D6kRUGbDD2uIL-zIa5OWmONglCgLMgiv0b6BTMjRWoPNX_" target="_blank" rel="external">内核</a>作为中间人来完成对设备的操作。</li>
+<li>来吃个栗子（例子）吧：以最简单的磁盘读写为例，从磁盘A读取文件到磁盘B,其过程是这样的：A文件数据从磁盘开始，然后载入到“内核缓冲区”，然后拷贝到“用户缓存区”，这完成了读操作。写操作也是一样的，从“用户缓存区”拷贝到“内核缓冲区”，最后写入到磁盘B中。</li>
+<li>这样读写文件很累吧。有大神提出了要删繁就简，取消“用户缓存区”那部分拷贝工作，引入了MMP（Memory-Mapping，内存映射）的概念。实现原理是这样的：建立一个磁盘空间和内存的直接映射，数据不再拷贝到“用户缓存区”，而是返回一个指向内存空间的指针。这样我们之前的文件拷贝就变成了如下步骤：A磁盘中文件将数据载入到“内核缓冲区”，B磁盘从“内核缓冲区”拷贝写入文件。减少了一次拷贝过程，减少了内存的占用。</li>
+<li>回到正题：简单来说，sendfile的原理和mmp的方式类似，核心也是减少了“内核缓冲区”到“用户缓冲区”的拷贝。</li>
+<li>优点： 不仅节省了内存，还节省了CPU的开销。</li>
+</ol>
+</li>
+</ol>
+<h4 id="四-节约web服务器的CPU"><a href="#四-节约web服务器的CPU" class="headerlink" title="四 节约web服务器的CPU"></a>四 节约web服务器的CPU</h4><ol>
+<li>对于web服务器而言，CPU是另一个非常核心的系统资源。就web服务器而言，除了业务程序消耗CPU外，多线程/多进程的上下文切换，也是比较消耗CPU资源的。</li>
+<li>一个进程/线程无法长时间占用CPU，当发生阻塞或者<a href="http://baike.baidu.com/link?url=eUI15AuqbxTgT0KcV58mVbhAcdi-kr9ltue5nr-cL8RQtO2RXnupCqe3htS05Em5xthAdfebQNnJ9C3fny13bK" target="_blank" rel="external">时间片</a>用完时，就无法继续占用CPU，这时会发生时间上下文的切换，即老的时间片切换到新的时间片，也是耗CPU的。</li>
+<li>在并发连接数目很高的情况下，去轮询检测用户建立的连接状态（socket文件描述符），也是消耗CPU的。</li>
+<li>笔者在这里只介绍一下终极问题及解决办法：</li>
+</ol>
+<blockquote>
+<p>多线程下的锁对CPU的开销</p>
+</blockquote>
+<ol>
+<li><p>Apache中的worker和event模式，都有采用多线程。多线程因为共享父进程的内存空间，在访问共享数据的时候，就会产生竞争，也就是线程安全问题。因此通常会引入锁（Linux下比较常用的线程相关的锁有互斥量<a href="http://baike.baidu.com/link?url=OaFzEcqZUL3YxsGOsm-ddMmlcsySLgKia6ooMFWdYvsyCVG4L-m7ENKuZ-oiF2jtjy9X9QtColdu2Q_L2viRjUQD6jQRBh-gWOylaRHwzwm" target="_blank" rel="external">metux</a>，读写锁<a href="http://baike.baidu.com/view/2214179.htm" target="_blank" rel="external">rwlock</a>等），成功获取锁的线程可以继续执行，获取失败的通常选择阻塞等待。引入锁的机制，程序的复杂度往往增加不少，同时还有线程“死锁”或者“饿死”的风险（多进程在访问进程间共享资源的时候，也有同样的问题）。</p>
+</li>
+<li><p>死锁现象（两个线程彼此锁住对方想要获取的资源，相互阻塞等待，永远无法达不到满足条件）</p>
+</li>
+<li>饿死现象（某个线程，一直获取不到它想要锁资源，永远无法执行下一步）</li>
+<li><p>为了避免这些锁导致的问题，就不得不加大程序的复杂度，解决方案一般有：</p>
+<ol>
+<li><p>对资源的加锁，根据约定好的顺序，大家都先对共享资源X加锁，加锁成功之后才能加锁共享资源Y。</p>
+</li>
+<li><p>如果线程占有资源X，却加锁资源Y失败，则放弃加锁，同时也释放掉之前占有的资源X。</p>
+</li>
+</ol>
+</li>
+<li><p>在使用PHP的时候，在Apache的worker和event模式下，也必须兼容线程安全。通常，新版本的PHP官方库是没有线程安全方面的问题，需要关注的是第三方扩展。PHP实现线程安全，不是通过锁的方式实现的。而是为每个线程独立申请一份全局变量的副本，相当于线程的私人内存空间，但是这样做相对多消耗一些内存。这样的好处：不需要引入复杂的锁机制实现，也避免了锁机制对CPU的开销。</p>
+</li>
+</ol>
+<h2 id="这里顺便提到一下，经常和Nginx搭配工作的PHP-FPM（FastCGI）使用的是多进程，因此不会有线程安全的问题。"><a href="#这里顺便提到一下，经常和Nginx搭配工作的PHP-FPM（FastCGI）使用的是多进程，因此不会有线程安全的问题。" class="headerlink" title="这里顺便提到一下，经常和Nginx搭配工作的PHP-FPM（FastCGI）使用的是多进程，因此不会有线程安全的问题。"></a>这里顺便提到一下，经常和Nginx搭配工作的PHP-FPM（FastCGI）使用的是多进程，因此不会有线程安全的问题。</h2><pre><code>笔者：王中阳 
+微信（QQ）：425772719
+公司：北京麦芽田网络科技有限公司
+邮箱：wangzhong.yang@foxmail.com
+本篇文章整理自==徐汉彬==老师的《高并发Web服务的演变——节约系统内存和CPU》
+本篇文稿初步整理,如有不妥之处敬请谅解
+欢迎在下方评论处交流讨论，欢迎纠正问题
+</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;第三方文档&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.cnblogs.com/web-ed2/articles/4315540.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;本文参
+    
+    </summary>
+    
+      <category term="大数据" scheme="http://wangzhongyang.ren/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
+    
+    
+      <category term="大数据" scheme="http://wangzhongyang.ren/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
+    
+  </entry>
   
   <entry>
     <title>UI优化总结</title>
